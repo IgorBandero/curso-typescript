@@ -26,7 +26,7 @@ function showResult(result) {
     const num2 = prompt("Second Number");
 
     if (num1 !== null && num2 !== null && !isNaN(Number(num1)) && !isNaN(Number(num2))){
-        let result = sum(num1,num2);
+        let result = sum(Number(num1),Number(num2));
         result += multiply(1,2);
         showResult(result);
     }
